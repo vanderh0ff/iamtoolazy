@@ -1,0 +1,20 @@
+body {
+    background-color: #353138;
+}
+.toggle-button {
+    display:block;
+    padding:1em;
+    border-radius: 1em;
+    border-style: solid;
+    border-color: #7f5e52
+    border-width: 1em;
+    background-color: #695856;
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+    color: #E4DCD1;
+}
+.toggle-button>a:visited, a:hover, a:active, a:link {
+    color: #E4DCD1;
+    text-decoration: none;
+}

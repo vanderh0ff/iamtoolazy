@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>{{ title }} - because your too lazy to get up</title>
+    <link rel="stylesheet" type="text/css" href="static/master.css" >
+  </head>
+  <body>
+    {% for switch in switches %}
+      <div class="toggle-button off"><a href="off?netid={{switch.network_id}}"> {{ switch.name }} off </a> </div>
+      <div class="toggle-button on"><a href="on?netid={{switch.network_id}}"> {{ switch.name }} on </a> </div>
+    {% endfor %}
+  </body>
+</html>
