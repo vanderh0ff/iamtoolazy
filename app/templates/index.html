@@ -5,8 +5,10 @@
   </head>
   <body>
     {% for switch in switches %}
-      <div class="toggle-button off"><a href="off?netid={{switch.network_id}}"> {{ switch.name }} off </a> </div>
-      <div class="toggle-button on"><a href="on?netid={{switch.network_id}}"> {{ switch.name }} on </a> </div>
+      <div class="toggle-button off"><a href="off?netid={{switch.network_id}};socket=0"> {{ switch.name }} socket 0 off </a> </div>
+      <div class="toggle-button off"><a href="off?netid={{switch.network_id}};socket=1"> {{ switch.name }} socket 1 off </a> </div>
+      <div class="toggle-button on"><a href="on?netid={{switch.network_id}};socket=0"> {{ switch.name }} socket 0 on </a> </div>
+      <div class="toggle-button on"><a href="on?netid={{switch.network_id}};socket=1"> {{ switch.name }} socket 1 on </a> </div>
     {% endfor %}
   </body>
 </html>
