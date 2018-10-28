@@ -11,3 +11,4 @@ ToDo
 - device management page
 - switch groups
 - independent outlet control
+- add an api
